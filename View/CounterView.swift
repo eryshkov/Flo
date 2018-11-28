@@ -20,7 +20,15 @@ import UIKit
         }
     }
     
-    @IBInspectable var counter: Int = 5
+    @IBInspectable var counter: Int = 5 {
+        didSet {
+            if counter <=  Constants.numberOfGlasses {
+                //the view needs to be refreshed
+                setNeedsDisplay()
+            }
+        }
+    }
+    
     @IBInspectable var outlineColor: UIColor = UIColor.blue
     @IBInspectable var counterColor: UIColor = UIColor.orange
     

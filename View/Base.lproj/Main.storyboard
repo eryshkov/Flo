@@ -19,10 +19,18 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="rw7-1g-YtC">
-                                <rect key="frame" x="137.5" y="349.5" width="100" height="168"/>
+                                <rect key="frame" x="72.5" y="125.5" width="230" height="416"/>
                                 <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ydL-An-cgu">
+                                        <rect key="frame" x="0.0" y="0.0" width="230" height="230"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="ydL-An-cgu" secondAttribute="height" multiplier="1:1" id="WAL-9X-bch"/>
+                                            <constraint firstAttribute="width" constant="230" id="WMg-Ne-HFh"/>
+                                        </constraints>
+                                    </view>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CXv-7S-8Q8" customClass="PushButton" customModule="Flo" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                        <rect key="frame" x="65" y="248" width="100" height="100"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="CXv-7S-8Q8" secondAttribute="height" multiplier="1:1" id="L6d-Qb-TAE"/>
                                             <constraint firstAttribute="width" constant="100" id="j7e-Yw-Bdu"/>
@@ -35,7 +43,7 @@
                                         </userDefinedRuntimeAttributes>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZUt-dd-m0J" customClass="PushButton" customModule="Flo" customModuleProvider="target">
-                                        <rect key="frame" x="25" y="118" width="50" height="50"/>
+                                        <rect key="frame" x="90" y="366" width="50" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="50" id="R53-L0-lou"/>
                                             <constraint firstAttribute="width" secondItem="ZUt-dd-m0J" secondAttribute="height" multiplier="1:1" id="nJg-fW-vly"/>
@@ -52,7 +60,7 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="rw7-1g-YtC" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="100" id="16Z-JC-Xt8"/>
+                            <constraint firstItem="rw7-1g-YtC" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="16Z-JC-Xt8"/>
                             <constraint firstItem="rw7-1g-YtC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="f3T-dR-GMc"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>

@@ -23,10 +23,20 @@
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ydL-An-cgu" customClass="CounterView" customModule="Flo" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="230" height="230"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="8" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dCK-fk-9n8">
+                                                <rect key="frame" x="104" y="93.5" width="22" height="43"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="ydL-An-cgu" secondAttribute="height" multiplier="1:1" id="WAL-9X-bch"/>
                                             <constraint firstAttribute="width" constant="230" id="WMg-Ne-HFh"/>
+                                            <constraint firstItem="dCK-fk-9n8" firstAttribute="centerX" secondItem="ydL-An-cgu" secondAttribute="centerX" id="bY7-ic-NCv"/>
+                                            <constraint firstItem="dCK-fk-9n8" firstAttribute="centerY" secondItem="ydL-An-cgu" secondAttribute="centerY" id="fk7-bb-5ka"/>
                                         </constraints>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="counter">
@@ -76,6 +86,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="counterLabel" destination="dCK-fk-9n8" id="b25-Mt-eIs"/>
+                        <outlet property="counterView" destination="ydL-An-cgu" id="MH1-TB-USc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

@@ -40,14 +40,15 @@ import UIKit
         let radius: CGFloat = max(bounds.width, bounds.height)
         
         // 3
+        let fixAngle = 2 * acos((2 * radius * radius - Constants.halfOfLineWidth * Constants.halfOfLineWidth)/(2 * radius * radius))
         let startAngle: CGFloat = 3 * .pi / 4
         let endAngle: CGFloat = .pi / 4
         
         // 4
         let path = UIBezierPath(arcCenter: center,
                                 radius: radius/2 - Constants.arcWidth/2,
-                                startAngle: startAngle,
-                                endAngle: endAngle,
+                                startAngle: startAngle - fixAngle,
+                                endAngle: endAngle + fixAngle,
                                 clockwise: true)
         
         // 5
@@ -68,7 +69,7 @@ import UIKit
         //2 - draw the outer arc
         let outlinePath = UIBezierPath(arcCenter: center,
                                        radius: bounds.width/2 - Constants.halfOfLineWidth,
-                                       startAngle: startAngle,
+                                       startAngle: startAngle - fixAngle,
                                        endAngle: outlineEndAngle,
                                        clockwise: true)
         
@@ -76,7 +77,7 @@ import UIKit
         outlinePath.addArc(withCenter: center,
                            radius: bounds.width/2 - Constants.arcWidth + Constants.halfOfLineWidth,
                            startAngle: outlineEndAngle,
-                           endAngle: startAngle,
+                           endAngle: startAngle - fixAngle,
                            clockwise: false)
         
         //4 - close the path

@@ -54,7 +54,7 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gRL-CR-ib9" customClass="GraphView" customModule="Flo" customModuleProvider="target">
+                                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gRL-CR-ib9" customClass="GraphView" customModule="Flo" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="25" width="300" height="250"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="9E5-hA-XNO">

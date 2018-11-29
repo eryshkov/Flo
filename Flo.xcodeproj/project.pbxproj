@@ -14,6 +14,7 @@
 		5C34DBED21AE8ADA00E1E2B7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C34DBEB21AE8ADA00E1E2B7 /* LaunchScreen.storyboard */; };
 		5C34DBF821AE932600E1E2B7 /* PushButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C34DBF721AE932600E1E2B7 /* PushButton.swift */; };
 		5C47D61B21AEACAB00A033FE /* CounterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C47D61A21AEACAB00A033FE /* CounterView.swift */; };
+		5C47D65221B0547A00A033FE /* GraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C47D65121B0547A00A033FE /* GraphView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		5C34DBEE21AE8ADA00E1E2B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5C34DBF721AE932600E1E2B7 /* PushButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushButton.swift; sourceTree = "<group>"; };
 		5C47D61A21AEACAB00A033FE /* CounterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterView.swift; sourceTree = "<group>"; };
+		5C47D65121B0547A00A033FE /* GraphView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 			children = (
 				5C34DBE621AE8AD700E1E2B7 /* Main.storyboard */,
 				5C47D61A21AEACAB00A033FE /* CounterView.swift */,
+				5C47D65121B0547A00A033FE /* GraphView.swift */,
 				5C34DBF721AE932600E1E2B7 /* PushButton.swift */,
 				5C34DBEB21AE8ADA00E1E2B7 /* LaunchScreen.storyboard */,
 			);
@@ -165,6 +168,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C47D65221B0547A00A033FE /* GraphView.swift in Sources */,
 				5C34DBE521AE8AD700E1E2B7 /* ViewController.swift in Sources */,
 				5C34DBE321AE8AD700E1E2B7 /* AppDelegate.swift in Sources */,
 				5C34DBF821AE932600E1E2B7 /* PushButton.swift in Sources */,

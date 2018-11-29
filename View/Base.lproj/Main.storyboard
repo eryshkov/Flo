@@ -19,13 +19,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="rw7-1g-YtC">
-                                <rect key="frame" x="47.5" y="100.5" width="280" height="466"/>
+                                <rect key="frame" x="37.5" y="90.5" width="300" height="486"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EI4-H3-T3M">
-                                        <rect key="frame" x="0.0" y="0.0" width="280" height="280"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EI4-H3-T3M" userLabel="Container View">
+                                        <rect key="frame" x="0.0" y="0.0" width="300" height="300"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ydL-An-cgu" customClass="CounterView" customModule="Flo" customModuleProvider="target">
-                                                <rect key="frame" x="25" y="25" width="230" height="230"/>
+                                                <rect key="frame" x="35" y="35" width="230" height="230"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="8" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dCK-fk-9n8">
                                                         <rect key="frame" x="104" y="93.5" width="22" height="43"/>
@@ -53,17 +53,31 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gRL-CR-ib9" customClass="GraphView" customModule="Flo" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="25" width="300" height="250"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="300" id="9j7-B4-UgV"/>
+                                                    <constraint firstAttribute="height" constant="250" id="W5k-gA-dE9"/>
+                                                </constraints>
+                                            </view>
                                         </subviews>
                                         <color key="backgroundColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <gestureRecognizers/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="EI4-H3-T3M" secondAttribute="height" multiplier="1:1" id="D90-OK-Rax"/>
+                                            <constraint firstItem="gRL-CR-ib9" firstAttribute="centerX" secondItem="EI4-H3-T3M" secondAttribute="centerX" id="NYS-kW-PlU"/>
                                             <constraint firstItem="ydL-An-cgu" firstAttribute="centerY" secondItem="EI4-H3-T3M" secondAttribute="centerY" id="Qag-hY-F1Y"/>
-                                            <constraint firstAttribute="width" constant="280" id="XgC-Jy-sNr"/>
+                                            <constraint firstItem="gRL-CR-ib9" firstAttribute="centerY" secondItem="EI4-H3-T3M" secondAttribute="centerY" id="WCJ-hB-eOm"/>
+                                            <constraint firstAttribute="width" constant="300" id="XgC-Jy-sNr"/>
                                             <constraint firstItem="ydL-An-cgu" firstAttribute="centerX" secondItem="EI4-H3-T3M" secondAttribute="centerX" id="uDd-1q-1wA"/>
                                         </constraints>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="qU2-Pd-eXr" appends="YES" id="Igh-o9-2I1"/>
+                                        </connections>
                                     </view>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CXv-7S-8Q8" userLabel="Plus" customClass="PushButton" customModule="Flo" customModuleProvider="target">
-                                        <rect key="frame" x="90" y="298" width="100" height="100"/>
+                                        <rect key="frame" x="100" y="318" width="100" height="100"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="CXv-7S-8Q8" secondAttribute="height" multiplier="1:1" id="L6d-Qb-TAE"/>
                                             <constraint firstAttribute="width" constant="100" id="j7e-Yw-Bdu"/>
@@ -79,7 +93,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZUt-dd-m0J" userLabel="Minus" customClass="PushButton" customModule="Flo" customModuleProvider="target">
-                                        <rect key="frame" x="115" y="416" width="50" height="50"/>
+                                        <rect key="frame" x="125" y="436" width="50" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="50" id="R53-L0-lou"/>
                                             <constraint firstAttribute="width" secondItem="ZUt-dd-m0J" secondAttribute="height" multiplier="1:1" id="nJg-fW-vly"/>
@@ -105,11 +119,18 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="containerView" destination="EI4-H3-T3M" id="1bP-2b-7An"/>
                         <outlet property="counterLabel" destination="dCK-fk-9n8" id="b25-Mt-eIs"/>
                         <outlet property="counterView" destination="ydL-An-cgu" id="MH1-TB-USc"/>
+                        <outlet property="graphView" destination="gRL-CR-ib9" id="Kw1-fQ-kpx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="qU2-Pd-eXr">
+                    <connections>
+                        <action selector="counterViewTap:" destination="BYZ-38-t0r" id="Gfk-fD-chr"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
         </scene>
     </scenes>

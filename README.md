@@ -5,4 +5,4 @@ Complete app to track your drinking habits
 
 ![scr1](/screenshots/IMG_0463.PNG)
 
-[Demo Video here](https://youtu.be/CnJbsewVX1I)
+![Demo Video here](https://youtu.be/CnJbsewVX1I)

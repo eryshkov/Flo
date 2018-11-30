@@ -35,7 +35,7 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="DWQ-AV-GFF" customClass="MedalView" customModule="Flo" customModuleProvider="target">
-                                                        <rect key="frame" x="75" y="147" width="80" height="80"/>
+                                                        <rect key="frame" x="75" y="150" width="80" height="80"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="DWQ-AV-GFF" secondAttribute="height" multiplier="1:1" id="b2p-1K-LN2"/>
                                                             <constraint firstAttribute="width" constant="80" id="lah-24-hzg"/>
@@ -45,7 +45,7 @@
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstItem="DWQ-AV-GFF" firstAttribute="centerX" secondItem="ydL-An-cgu" secondAttribute="centerX" id="RO4-er-pnu"/>
-                                                    <constraint firstAttribute="bottom" secondItem="DWQ-AV-GFF" secondAttribute="bottom" constant="3" id="VHh-x5-Hew"/>
+                                                    <constraint firstAttribute="bottom" secondItem="DWQ-AV-GFF" secondAttribute="bottom" id="VHh-x5-Hew"/>
                                                     <constraint firstAttribute="width" secondItem="ydL-An-cgu" secondAttribute="height" multiplier="1:1" id="WAL-9X-bch"/>
                                                     <constraint firstAttribute="width" constant="230" id="WMg-Ne-HFh"/>
                                                     <constraint firstItem="dCK-fk-9n8" firstAttribute="centerX" secondItem="ydL-An-cgu" secondAttribute="centerX" id="bY7-ic-NCv"/>

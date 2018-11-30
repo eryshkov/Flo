@@ -7,3 +7,9 @@ Complete app to track your drinking habits
 
 
 [Demo Video here](https://youtu.be/CnJbsewVX1I)
+
+## Main functionality
+* Draws rounded buttons via draw() UIView method
+* export UIImage from drawing context
+* simple GraphView implemented
+* fixed CounterView issue via fixAngle implementation instead of original project from RW

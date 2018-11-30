@@ -3,6 +3,6 @@ Core Graphics [Tutorial](https://www.raywenderlich.com/411-core-graphics-tutoria
 
 Complete app to track your drinking habits
 
-![scr1](/screenshots/IMG_0463.PNG)
+<img src="/Users/eugem/Developer/Flo/screenshots/IMG_0463.PNG" width="19%"> <img src="/Users/eugem/Developer/Flo/screenshots/IMG_0464.PNG" width="19%"> <img src="/Users/eugem/Developer/Flo/screenshots/IMG_0465.PNG" width="19%"><img src="/Users/eugem/Developer/Flo/screenshots/IMG_0466.PNG" width="19%">
 
-![Demo Video here](https://youtu.be/CnJbsewVX1I)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/CnJbsewVX1I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

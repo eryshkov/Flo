@@ -13,6 +13,7 @@ import UIKit
     
     @IBInspectable var fillColor: UIColor = UIColor.green
     @IBInspectable var isAddButton: Bool = true
+    @IBInspectable var darkerOnHighlight: CGFloat = 30
     
     private struct Constants {
         static let plusLineWidth: CGFloat = 3.0
@@ -31,7 +32,14 @@ import UIKit
     // Only override draw() if you perform custom drawing.
     // An empty implementation adversely affects performance during animation.
     override func draw(_ rect: CGRect) {
+        var fillColor = self.fillColor.copy() as! UIColor
+        
         let path = UIBezierPath(ovalIn: rect)
+        
+        if isHighlighted {
+            fillColor = fillColor.darker(by: darkerOnHighlight)
+        }
+        
         fillColor.setFill()
         path.fill()
         
@@ -74,5 +82,11 @@ import UIKit
         
         //draw the stroke
         plusPath.stroke()
+    }
+    
+    override var isHighlighted: Bool {
+        didSet {
+            setNeedsDisplay()
+        }
     }
 }

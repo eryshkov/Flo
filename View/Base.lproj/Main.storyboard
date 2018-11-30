@@ -206,6 +206,9 @@
                                             <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
                                                 <color key="value" red="0.3411764705882353" green="0.85490196078431369" blue="0.83529411764705885" alpha="1" colorSpace="calibratedRGB"/>
                                             </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="darkerOnHighlight">
+                                                <real key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="pushButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wOw-WH-RoP"/>
@@ -222,6 +225,9 @@
                                             <userDefinedRuntimeAttribute type="boolean" keyPath="isAddButton" value="NO"/>
                                             <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
                                                 <color key="value" red="0.93333333333333335" green="0.30196078431372547" blue="0.30196078431372547" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="darkerOnHighlight">
+                                                <real key="value" value="20"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>

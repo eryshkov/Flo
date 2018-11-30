@@ -13,3 +13,4 @@ Complete app to track your drinking habits
 * export UIImage from drawing context
 * simple GraphView implemented
 * fixed CounterView issue via fixAngle implementation instead of original project from RW
+* darker of lighter color implemented to give the buttons a nice UI touch so they respond when pressed

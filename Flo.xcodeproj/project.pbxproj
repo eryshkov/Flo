@@ -16,6 +16,7 @@
 		5C47D61B21AEACAB00A033FE /* CounterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C47D61A21AEACAB00A033FE /* CounterView.swift */; };
 		5C47D65221B0547A00A033FE /* GraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C47D65121B0547A00A033FE /* GraphView.swift */; };
 		5C47D65421B1409B00A033FE /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C47D65321B1409B00A033FE /* BackgroundView.swift */; };
+		5C924D7121B1529500E2D2FD /* MedalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C924D7021B1529500E2D2FD /* MedalView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		5C47D65121B0547A00A033FE /* GraphView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphView.swift; sourceTree = "<group>"; };
 		5C47D65321B1409B00A033FE /* BackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundView.swift; sourceTree = "<group>"; };
 		5C47D65521B1493E00A033FE /* MedalDrawing.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MedalDrawing.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		5C924D7021B1529500E2D2FD /* MedalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedalView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +89,7 @@
 				5C47D65521B1493E00A033FE /* MedalDrawing.playground */,
 				5C34DBE621AE8AD700E1E2B7 /* Main.storyboard */,
 				5C47D61A21AEACAB00A033FE /* CounterView.swift */,
+				5C924D7021B1529500E2D2FD /* MedalView.swift */,
 				5C47D65321B1409B00A033FE /* BackgroundView.swift */,
 				5C47D65121B0547A00A033FE /* GraphView.swift */,
 				5C34DBF721AE932600E1E2B7 /* PushButton.swift */,
@@ -175,6 +178,7 @@
 			files = (
 				5C47D65421B1409B00A033FE /* BackgroundView.swift in Sources */,
 				5C47D65221B0547A00A033FE /* GraphView.swift in Sources */,
+				5C924D7121B1529500E2D2FD /* MedalView.swift in Sources */,
 				5C34DBE521AE8AD700E1E2B7 /* ViewController.swift in Sources */,
 				5C34DBE321AE8AD700E1E2B7 /* AppDelegate.swift in Sources */,
 				5C34DBF821AE932600E1E2B7 /* PushButton.swift in Sources */,

@@ -10,6 +10,16 @@ let darkGoldColor = UIColor(red: 0.6, green: 0.5, blue: 0.15, alpha: 1.0)
 let midGoldColor = UIColor(red: 0.86, green: 0.73, blue: 0.3, alpha: 1.0)
 let lightGoldColor = UIColor(red: 1.0, green: 0.98, blue: 0.9, alpha: 1.0)
 
+//Add Shadow
+let shadow: UIColor = UIColor.black.withAlphaComponent(0.80)
+let shadowOffset = CGSize(width: 2.0, height: 2.0)
+let shadowBlurRadius: CGFloat = 5
+
+context.setShadow(offset: shadowOffset, blur: shadowBlurRadius, color: shadow.cgColor)
+
+context.beginTransparencyLayer(auxiliaryInfo: nil)
+
+
 //Lower Ribbon
 let lowerRibbonPath = UIBezierPath()
 lowerRibbonPath.move(to: CGPoint(x: 0, y: 0))
@@ -69,6 +79,7 @@ let numberOneAttributes = [
 ]
 numberOne.draw(in: numberOneRect, withAttributes: numberOneAttributes)
 
+context.endTransparencyLayer()
 //This code must always be at the end of the playground
 let image = UIGraphicsGetImageFromCurrentImageContext()
 UIGraphicsEndImageContext()

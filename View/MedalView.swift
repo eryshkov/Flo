@@ -19,7 +19,6 @@ class MedalView: UIImageView {
     }
     
     func createMedalImage() -> UIImage {
-        print("creating Medal Image")
         let size = CGSize(width: 120, height: 200)
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0.0)

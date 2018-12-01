@@ -11,9 +11,13 @@ import UIKit
 
 @IBDesignable class PushButton: UIButton {
     
-    @IBInspectable var fillColor: UIColor = UIColor.green
+    @IBInspectable var fillColorIB: UIColor = UIColor.green
     @IBInspectable var isAddButton: Bool = true
     @IBInspectable var darkerOnHighlight: CGFloat = 30
+    
+    lazy var pressedButtonColor: UIColor = {
+        return fillColorIB.darker(by: darkerOnHighlight)
+    }()
     
     private struct Constants {
         static let plusLineWidth: CGFloat = 3.0
@@ -32,14 +36,16 @@ import UIKit
     // Only override draw() if you perform custom drawing.
     // An empty implementation adversely affects performance during animation.
     override func draw(_ rect: CGRect) {
-        var fillColor = self.fillColor.copy() as! UIColor
-        
-        let path = UIBezierPath(ovalIn: rect)
+        let fillColor: UIColor
         
         if isHighlighted {
-            fillColor = fillColor.darker(by: darkerOnHighlight)
+            fillColor = pressedButtonColor
+        }else{
+            fillColor = self.fillColorIB
         }
         
+        let path = UIBezierPath(ovalIn: rect)
+
         fillColor.setFill()
         path.fill()
         

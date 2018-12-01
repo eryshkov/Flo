@@ -15,7 +15,7 @@ import UIKit
     @IBInspectable var isAddButton: Bool = true
     @IBInspectable var darkerOnHighlight: CGFloat = 30
     
-    lazy var pressedButtonColor: UIColor = {
+    fileprivate lazy var pressedButtonColor: UIColor = {
         return fillColorIB.darker(by: darkerOnHighlight)
     }()
     

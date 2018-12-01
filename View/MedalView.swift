@@ -11,7 +11,7 @@ import UIKit
 class MedalView: UIImageView {
 
     
-    lazy var medalImage: UIImage = self.createMedalImage()
+    fileprivate lazy var medalImage: UIImage = self.createMedalImage()
     
     
     func showMedal(show: Bool) {
